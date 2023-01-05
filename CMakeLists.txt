@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16.0)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+list(APPEND EXTRA_COMPONENT_DIRS third_party/arduino)
+list(APPEND EXTRA_COMPONENT_DIRS third-party/esp32-arduino-lib-builder/components/arduino_tinyusb)
+list(APPEND EXTRA_COMPONENT_DIRS third_party/golioth-firmware-sdk/port/esp_idf/components)
+project(golioth_platformio_arduino)
