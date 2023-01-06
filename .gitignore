@@ -3,3 +3,4 @@
 credentials.h
 sdkconfig*
 !sdkconfig.defaults
+dependencies.lock
