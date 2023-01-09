@@ -32,9 +32,15 @@ Prerequisite: [Install PlatformIO for
 VScode](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 
 1. Clone this repo to a folder where you like to keep your PlatformIO projects
+
+   ```shell
+   git clone https://github.com/goliothlabs/golioth_platformio_arduino.git
+   ```
+
 2. Enter the folder and run the following commands:
 
    ```shell
+   cd golioth_platformio_arduino
    git submodule update --init --recursive
    git clone https://github.com/hathach/tinyusb.git third_party/esp32-arduino-lib-builder/components/arduino_tinyusb/tinyusb
    ```
