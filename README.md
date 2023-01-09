@@ -34,16 +34,16 @@ VScode](https://docs.platformio.org/en/latest/integration/ide/vscode.html)
 1. Clone this repo to a folder where you like to keep your PlatformIO projects
 2. Enter the folder and run the following commands:
 
-    ```shell
-    git submodule update --init --recursive
-    git clone https://github.com/hathach/tinyusb.git third_party/esp32-arduino-lib-builder/components/arduino_tinyusb/tinyusb
-    ```
+   ```shell
+   git submodule update --init --recursive
+   git clone https://github.com/hathach/tinyusb.git third_party/esp32-arduino-lib-builder/components/arduino_tinyusb/tinyusb
+   ```
 
-    **Note:** The `tinyusb` package needs to be added in the components directory of the
-    ESP32 Arduino Lib Builder. Because the Lib Builder is already a submodule, we're
-    directly cloning tinyusb into it. This is not ideal but it works. A more robust
-    solution would be to clone those elsewhere (not as submodules) and update the
-    CMakeLists.txt entry for tinyusb.
+   **Note:** The `tinyusb` package needs to be added in the components directory of the
+   ESP32 Arduino Lib Builder. Because the Lib Builder is already a submodule, we're
+   directly cloning tinyusb into it. This is not ideal but it works. A more robust
+   solution would be to clone those elsewhere (not as submodules) and update the
+   CMakeLists.txt entry for tinyusb.
 
 3. Import the project in PlatformIO
 
@@ -55,10 +55,10 @@ ESP32-c3) the change needs to be made in the PlatformIO.
 1. Make a copy of `credentials.h_example` and rename it `credentials.h`. In this
    file you need to provide four credentials for this demo to run:
 
-    * WiFi SSID
-    * WiFi Password
-    * Golioth Device PSK-ID
-    * Golioth Device PSK
+   * WiFi SSID
+   * WiFi Password
+   * Golioth Device PSK-ID
+   * Golioth Device PSK
 
    **Note:** You can find your device credentials by visiting the [Golioth Web
     Console](https://console.golioth.io/).
